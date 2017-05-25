@@ -111,14 +111,7 @@ section:full-screen
 var e = document.getElementById("fullscreen");
 
 e.onclick = function() {
-
-    if (RunPrefixMethod(document, "FullScreen") || RunPrefixMethod(document, "IsFullScreen")) {
-        RunPrefixMethod(document, "CancelFullScreen");
-    }
-    else {
         RunPrefixMethod(e, "RequestFullScreen");
-    }
-
 }
 
 var pfx = ["webkit", "moz", "ms", "o", ""];
